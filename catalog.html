@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaf & Lore | Catalog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="home.html" class="logo">
+        <span class="logo-icon">📚</span>
+        <span class="logo-text">Inkopia</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="catalog.html" class="active">Catalog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header section-header-row">
+        <div>
+          <h2>Our Catalog</h2>
+          <p>Browse through our collection of handpicked titles.</p>
+        </div>
+        <div class="catalog-controls">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search by title, author, or genre..."
+          />
+          <select id="genreFilter" class="select-input">
+            <option value="all">All Genres</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Romance">Romance</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalog-grid" id="catalogGrid">
+        <!-- Each card has data attributes for JS filtering -->
+        <article class="book-card" data-title="Whispers of Dawn" data-author="Lena Hart" data-genre="Fiction">
+          <div class="book-cover gradient-1"></div>
+          <div class="book-info">
+            <h3>Whispers of Dawn</h3>
+            <p class="book-author">Lena Hart</p>
+            <p class="book-meta">Fiction · 320 pages</p>
+            <p class="book-desc">
+              A heartwarming tale about second chances and new beginnings.
+            </p>
+            <div class="book-footer">
+              <span class="book-price">₹499</span>
+              <button class="btn small-btn wishlist-btn">♡ Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" data-title="Echoes of Time" data-author="Noah Reed" data-genre="Sci-Fi">
+          <div class="book-cover gradient-2"></div>
+          <div class="book-info">
+            <h3>Echoes of Time</h3>
+            <p class="book-author">Noah Reed</p>
+            <p class="book-meta">Sci-Fi · 410 pages</p>
+            <p class="book-desc">
+              A thrilling journey through timelines and the cost of changing fate.
+            </p>
+            <div class="book-footer">
+              <span class="book-price">₹599</span>
+              <button class="btn small-btn wishlist-btn">♡ Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" data-title="Midnight Letters" data-author="Aarav Singh" data-genre="Romance">
+          <div class="book-cover gradient-4"></div>
+          <div class="book-info">
+            <h3>Midnight Letters</h3>
+            <p class="book-author">Aarav Singh</p>
+            <p class="book-meta">Romance · 280 pages</p>
+            <p class="book-desc">
+              Two strangers, one city, and a series of letters that change everything.
+            </p>
+            <div class="book-footer">
+              <span class="book-price">₹399</span>
+              <button class="btn small-btn wishlist-btn">♡ Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" data-title="The Silent Library" data-author="Aria Winters" data-genre="Mystery">
+          <div class="book-cover gradient-5"></div>
+          <div class="book-info">
+            <h3>The Silent Library</h3>
+            <p class="book-author">Aria Winters</p>
+            <p class="book-meta">Mystery · 350 pages</p>
+            <p class="book-desc">
+              An ancient library, a missing book, and a secret society in the shadows.
+            </p>
+            <div class="book-footer">
+              <span class="book-price">₹520</span>
+              <button class="btn small-btn wishlist-btn">♡ Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" data-title="Pages of Serenity" data-author="Mira Patel" data-genre="Non-Fiction">
+          <div class="book-cover gradient-3"></div>
+          <div class="book-info">
+            <h3>Pages of Serenity</h3>
+            <p class="book-author">Mira Patel</p>
+            <p class="book-meta">Non-Fiction · 260 pages</p>
+            <p class="book-desc">
+              A mindful guide to slowing down and savoring life’s little moments.
+            </p>
+            <div class="book-footer">
+              <span class="book-price">₹450</span>
+              <button class="btn small-btn wishlist-btn">♡ Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" data-title="Starlit Seas" data-author="Rhea Moore" data-genre="Fiction">
+          <div class="book-cover gradient-6"></div>
+          <div class="book-info">
+            <h3>Starlit Seas</h3>
+            <p class="book-author">Rhea Moore</p>
+            <p class="book-meta">Fiction · 390 pages</p>
+            <p class="book-desc">
+              An unforgettable voyage across oceans, dreams, and destiny.
+            </p>
+            <div class="book-footer">
+              <span class="book-price">₹560</span>
+              <button class="btn small-btn wishlist-btn">♡ Wishlist</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p id="noResults" class="no-results" style="display: none;">
+        No books match your search. Try a different title, author, or genre.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Inkopia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

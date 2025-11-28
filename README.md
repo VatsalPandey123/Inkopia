@@ -1,4 +1,4 @@
-#Inkopia
+Inkopia
 
 live URL-https://my-repo-psi-eight.vercel.app
 
